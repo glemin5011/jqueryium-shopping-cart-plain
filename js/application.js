@@ -78,5 +78,7 @@ $(document).ready(function () {
   </tr>
   `);
     updateTotalCart();
+    $(this).children(".item").val("");
+    $(this).children(".price").val("");
   });
 });
