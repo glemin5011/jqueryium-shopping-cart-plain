@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script src="js/application.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
   </head>
   <body>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-10">
+          <h1 class="my-4">Shopping Card</h1>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-dark mt-4 pt-2 dark-mode">Dark Mode</button>
+          <button class="btn btn-dark mt-4 pt-2 dark-mode d-none">
+            Dark Mode
+          </button>
+        </div>
+        <div class="col-12">
+          <table class="table table-responsive table-hover">
+            <thead>
+              <tr>
+                <th scope="col" id="itemnumber">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="itemnumber">1</td>
+                <td class="item">Salmon</td>
+                <td class="price">$60.00</td>
+                <td class="quantity">
+                  <label>QTY</label><input type="number" value="1" />
+                  <button class="btn btn-light btn-sm mb-1 remove">
+                    Remove
+                  </button>
+                </td>
+                <td class="subtotal">$60.00</td>
+              </tr>
+              <tr>
+                <td class="itemnumber">2</td>
+                <td class="item">Tuna</td>
+                <td class="price">$50.00</td>
+                <td class="quantity">
+                  <label>QTY</label><input type="number" value="1" />
+                  <button class="btn btn-light btn-sm mb-1 remove">
+                    Remove
+                  </button>
+                </td>
+                <td class="subtotal">$50.00</td>
+              </tr>
+              <tr>
+                <td class="itemnumber">3</td>
+                <td class="item">Carp</td>
+                <td class="price">$40.00</td>
+                <td class="quantity">
+                  <label>QTY</label><input type="number" value="1" />
+                  <button class="btn btn-light btn-sm mb-1 remove">
+                    Remove
+                  </button>
+                </td>
+                <td class="subtotal">$40.00</td>
+              </tr>
+              <tr>
+                <td class="itemnumber"></td>
+                <td class="item"><input type="text" placeholder="Item" /></td>
+                <td class="price">
+                  <input type="number" placeholder="Price" />
+                </td>
+                <td class="add">
+                  <button class="btn btn-success btn-sm add">Add</button>
+                </td>
+                <td class="subtotal"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,22 @@
+.quantity {
+  font-weight: bold;
+}
+.dark-mode {
+  font-weight: bold;
+  font-size: 18px;
+}
+.table {
+  table-layout: auto;
+}
+.table td,
+.table th {
+  white-space: nowrap;
+}
+
+.table thead th {
+  width: 20%;
+}
+
+#itemnumber {
+  width: 10%;
+}
